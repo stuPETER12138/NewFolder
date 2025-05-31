@@ -1,5 +1,6 @@
-![NewFolder](./logo.png)
-
+<div align="center">
+    <img src="./logo.png" alt="NewFolder" width="400px">
+</div>
 ## 配环境
 
 ```bash
