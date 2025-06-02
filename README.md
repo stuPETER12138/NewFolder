@@ -1,5 +1,5 @@
 <div align="center">
-    <img src="./logo.png" alt="NewFolder" width="400px">
+    <img src="./logo.png" alt="NewFolder" width="200px">
 </div>
 ## 配环境
 
