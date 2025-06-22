@@ -10,10 +10,4 @@ uv sync
 
 （装有 numpy 和 matplotlib 的普通 python 环境也行）
 
-## 数据分析
-
-### 最小二乘法
-
-```bash
-uv run .\src\least_squares.py
-```
+最小二乘法、项目树生成......

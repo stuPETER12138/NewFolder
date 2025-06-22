@@ -1,3 +1,6 @@
+"""
+最小二乘法拟合工具
+"""
 import numpy as np
 import matplotlib.pyplot as plt
 import os
