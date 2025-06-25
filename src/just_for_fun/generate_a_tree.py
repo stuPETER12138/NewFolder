@@ -1,7 +1,9 @@
 """
 This script generates a tree structure of a directory up to a specified depth and writes it to a markdown file.
 """
+
 import os
+
 
 def generate_tree(path: str, max_depth: int, depth=0) -> str:
     if depth >= max_depth:
@@ -11,11 +13,14 @@ def generate_tree(path: str, max_depth: int, depth=0) -> str:
         basename = os.path.basename(path)
         structure_tree += f"{'  ' * depth}- **{basename}/**\n"
         for name in sorted(os.listdir(path)):
-            structure_tree += generate_tree(os.path.join(path, name),  max_depth, depth + 1)
+            structure_tree += generate_tree(
+                os.path.join(path, name), max_depth, depth + 1
+            )
     else:
         basename = os.path.basename(path)
         structure_tree += f"{'  ' * depth}- {basename}\n"
     return structure_tree
+
 
 if __name__ == "__main__":
     root_dir = "D:\Coding\stuPETER12138.github.io"  # 指定项目目录
